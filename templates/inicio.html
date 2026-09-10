@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}
+Inicio
+{% endblock %}
+
+{% block content %}
+
+<div class="text-center mb-5">
+
+    <h1 class="display-5 fw-bold">
+        Sistema de Gestión de Negocio
+    </h1>
+
+    <p class="lead">
+        Aplicación desarrollada con Flask y Bootstrap
+        para practicar formularios y procesamiento de datos.
+    </p>
+
+</div>
+
+<div class="row g-4">
+
+    <div class="col-md-4">
+
+        <div class="card h-100 shadow-sm">
+
+            <div class="card-body text-center">
+
+                <h5 class="card-title">
+                    Clientes
+                </h5>
+
+                <p class="card-text">
+                    Registra la información de nuevos clientes.
+                </p>
+
+                <a href="/clientes" class="btn btn-primary">
+                    Registrar cliente
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card h-100 shadow-sm">
+
+            <div class="card-body text-center">
+
+                <h5 class="card-title">
+                    Proveedores
+                </h5>
+
+                <p class="card-text">
+                    Registra proveedores de productos o servicios.
+                </p>
+
+                <a href="/proveedores" class="btn btn-primary">
+                    Registrar proveedor
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card h-100 shadow-sm">
+
+            <div class="card-body text-center">
+
+                <h5 class="card-title">
+                    Inicio de sesión
+                </h5>
+
+                <p class="card-text">
+                    Accede al sistema con tu usuario y contraseña.
+                </p>
+
+                <a href="/login" class="btn btn-primary">
+                    Iniciar sesión
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
