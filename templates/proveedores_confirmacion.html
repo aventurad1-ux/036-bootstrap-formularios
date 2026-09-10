@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}
+Confirmación de Proveedor
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-8">
+
+        <div class="alert alert-success">
+            <strong>Información recibida correctamente.</strong>
+            Los datos del proveedor fueron procesados por Flask.
+        </div>
+
+        <div class="card shadow">
+
+            <div class="card-header">
+                <h4 class="mb-0">
+                    Datos del Proveedor
+                </h4>
+            </div>
+
+            <div class="card-body">
+
+                <table class="table table-bordered">
+
+                    <tr>
+                        <th>Empresa</th>
+                        <td>{{ empresa }}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Contacto</th>
+                        <td>{{ contacto }}</td>
+                    </tr>
+
+                    <tr>
+                        <th>NIT</th>
+                        <td>{{ nit }}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Producto / Servicio</th>
+                        <td>{{ tipo }}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Condición de pago</th>
+                        <td>{{ pago }}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Proveedor activo</th>
+                        <td>{{ activo }}</td>
+                    </tr>
+
+                </table>
+
+                <div class="alert alert-warning">
+                    Estos datos todavía no se guardan de forma permanente.
+                </div>
+
+                <a
+                    href="/proveedores"
+                    class="btn btn-primary"
+                >
+                    Registrar otro proveedor
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
